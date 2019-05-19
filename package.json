@@ -1,0 +1,19 @@
+{
+  "name": "oop-js",
+  "version": "1.0.0",
+  "description": "OOP Java Scritp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/testernick79/OOP-JS.git"
+  },
+  "author": "Nick Fonseca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/testernick79/OOP-JS/issues"
+  },
+  "homepage": "https://github.com/testernick79/OOP-JS#readme"
+}
