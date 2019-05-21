@@ -23,7 +23,7 @@ class Manager extends Employee {
         super(name, salary, hireDate);
         this.jobDescription = jobDescription;
     }
-    jobDescription() {
+    managerJobDescription() {
         console.log("Welcome to the team : " + this.name + " As of : "  + this.hireDate + " Your salary is : " + this.salary 
         + " Based on : " + this.jobDescription);
     }
@@ -35,9 +35,9 @@ class Designer extends Employee {
         super(name, salary, hireDate);
         this.yearsExperiance = yearsExperiance;
     }
-    yearsExperiance() {
+    designerYearsExperiance() {
         console.log("Welcome to the team : " + this.name + " As of : "  + this.hireDate + " Your salary is : " + this.salary 
-        + " You bring : " + this.yearsExperiance + " As a  Designer");
+        + " You bring : " + this.yearsExperiance + " " + "Years of Experiance" + " As a Designer");
     }
 
 }
@@ -48,16 +48,16 @@ class SalesAssociate extends Employee {
         super(name, salary, hireDate);
         this.degreeCompleted = degreeCompleted;
     }
-    degreeCompleted() {
+    salesAssociteDegreeCompleted() {
         console.log("Welcome to the team : " + this.name + " As of : "  + this.hireDate + " Your salary is : " + this.salary 
         + " Based on  the completion of your: " + this.degreeCompleted);
     }
 
 }
-let Manager = new Manager("Manages the West Division.", "Bob Ray", 120000, 5-20-2019);
-let Designer = new Designer(14, "Sandy Hollow", 80000, 6-22-2018);
-let SalesAssociate = new SalesAssociate("Masters", "Alex Smith", 55000, 4-21-2018);
+let manager = new Manager("Manages the West Division.", "Bob Ray", 120000, "5-20-2019");
+let designer = new Designer(14, "Sandy Hollow", 80000, "6-22-2018");
+let salesAssociate = new SalesAssociate("Masters", "Alex Smith", 55000, "4-21-2018");
 
-employee.jobDescription();
-employee.yearsExperiance();
-employee.degreeCompleted();
+manager.managerJobDescription();
+designer.designerYearsExperiance();
+salesAssociate.salesAssociteDegreeCompleted();
